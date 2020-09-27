@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8902E89124EEF72F00C36DEA /* ViewNotecardSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902E89024EEF72F00C36DEA /* ViewNotecardSetViewController.swift */; };
+		89080C34250010FE00B4D049 /* UploadFromQuizletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89080C33250010FE00B4D049 /* UploadFromQuizletViewController.swift */; };
+		89080C362500138200B4D049 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89080C352500138200B4D049 /* WebKit.framework */; };
+		890B6827250BB19E007E9CD3 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890B6826250BB19E007E9CD3 /* HomeKit.framework */; };
+		89136203251439DE005B03AF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89136202251439DE005B03AF /* StoreKit.framework */; };
+		892CB1AE24E9B1CC003E1C90 /* ChooseCreationMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CB1AD24E9B1CC003E1C90 /* ChooseCreationMethodViewController.swift */; };
+		892CB1FA24EC4846003E1C90 /* NotecardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CB1F824EC4846003E1C90 /* NotecardCell.swift */; };
+		892CB1FB24EC4846003E1C90 /* NotecardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892CB1F924EC4846003E1C90 /* NotecardCell.xib */; };
+		893BBF9A25092F8B00DFC71E /* QuizletInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BBF9925092F8B00DFC71E /* QuizletInstructionsViewController.swift */; };
+		894B960024E431D9007463B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B95FF24E431D9007463B0 /* AppDelegate.swift */; };
+		894B960224E431D9007463B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B960124E431D9007463B0 /* SceneDelegate.swift */; };
+		894B960724E431D9007463B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894B960524E431D9007463B0 /* Main.storyboard */; };
+		894B960924E431E3007463B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894B960824E431E3007463B0 /* Assets.xcassets */; };
+		894B960C24E431E3007463B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894B960A24E431E3007463B0 /* LaunchScreen.storyboard */; };
+		894B961424E44744007463B0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961324E44744007463B0 /* TabBar.swift */; };
+		894B961624E44934007463B0 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961524E44934007463B0 /* ProgressViewController.swift */; };
+		894B961824E45714007463B0 /* NotecardSetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961724E45714007463B0 /* NotecardSetsTableViewController.swift */; };
+		894B961A24E45A03007463B0 /* CircleProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961924E45A03007463B0 /* CircleProgressBarView.swift */; };
+		894B961C24E4AE22007463B0 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961B24E4AE22007463B0 /* Set.swift */; };
+		894B962024E4AF26007463B0 /* Notecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961F24E4AF26007463B0 /* Notecard.swift */; };
+		8957C91B251E68C60033075B /* SubscribeToPremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957C91A251E68C60033075B /* SubscribeToPremiumViewController.swift */; };
+		89A384902514D08400A599DD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3848F2514D08400A599DD /* MenuTableViewController.swift */; };
+		89A384942514DD8D00A599DD /* SlideInTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A384932514DD8D00A599DD /* SlideInTouch.swift */; };
+		89A384962514DE9D00A599DD /* SlideInTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A384932514DD8D00A599DD /* SlideInTouch.swift */; };
+		89A384972514DEA200A599DD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3848F2514D08400A599DD /* MenuTableViewController.swift */; };
+		89A384982514DEA500A599DD /* SeeQuestionsAnsweredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBDE3F24F7F43800A5E264 /* SeeQuestionsAnsweredViewController.swift */; };
+		89B567AA24F19E2000AB630F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567A924F19E2000AB630F /* SettingsViewController.swift */; };
+		89B567B624F2D42100AB630F /* NotecardSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567B424F2D42100AB630F /* NotecardSetCell.swift */; };
+		89B567B724F2D42100AB630F /* NotecardSetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B567B524F2D42100AB630F /* NotecardSetCell.xib */; };
+		89B567B924F3069100AB630F /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567B824F3069100AB630F /* Slider.swift */; };
+		89B567C024F3085B00AB630F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B567BF24F3085B00AB630F /* UserNotifications.framework */; };
+		89B567C224F3085B00AB630F /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B567C124F3085B00AB630F /* UserNotificationsUI.framework */; };
+		89B567C524F3085B00AB630F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567C424F3085B00AB630F /* NotificationViewController.swift */; };
+		89B567C824F3085B00AB630F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B567C624F3085B00AB630F /* MainInterface.storyboard */; };
+		89B567CC24F3085B00AB630F /* NotificationAppExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 89B567BE24F3085A00AB630F /* NotificationAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		89B567D124F3FD7800AB630F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B95FF24E431D9007463B0 /* AppDelegate.swift */; };
+		89B567D224F3FD7B00AB630F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B960124E431D9007463B0 /* SceneDelegate.swift */; };
+		89B567D324F3FD8700AB630F /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961B24E4AE22007463B0 /* Set.swift */; };
+		89B567D524F3FD8F00AB630F /* Notecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961F24E4AF26007463B0 /* Notecard.swift */; };
+		89B567D624F3FD9200AB630F /* NotecardSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567B424F2D42100AB630F /* NotecardSetCell.swift */; };
+		89B567D724F3FD9500AB630F /* NotecardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CB1F824EC4846003E1C90 /* NotecardCell.swift */; };
+		89B567D824F3FDAC00AB630F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894B960524E431D9007463B0 /* Main.storyboard */; };
+		89B567D924F3FDB100AB630F /* NotecardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892CB1F924EC4846003E1C90 /* NotecardCell.xib */; };
+		89B567DA24F3FDB500AB630F /* NotecardSetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B567B524F2D42100AB630F /* NotecardSetCell.xib */; };
+		89B567DB24F3FDB900AB630F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961324E44744007463B0 /* TabBar.swift */; };
+		89B567DC24F3FDBD00AB630F /* CircleProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961924E45A03007463B0 /* CircleProgressBarView.swift */; };
+		89B567DE24F3FDC100AB630F /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567B824F3069100AB630F /* Slider.swift */; };
+		89B567DF24F3FDC400AB630F /* NotecardSetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961724E45714007463B0 /* NotecardSetsTableViewController.swift */; };
+		89B567E024F3FDC800AB630F /* ChooseCreationMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CB1AD24E9B1CC003E1C90 /* ChooseCreationMethodViewController.swift */; };
+		89B567E224F3FDCD00AB630F /* ViewNotecardSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902E89024EEF72F00C36DEA /* ViewNotecardSetViewController.swift */; };
+		89B567E424F3FDD300AB630F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567A924F19E2000AB630F /* SettingsViewController.swift */; };
+		89B567E524F3FDD800AB630F /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B961524E44934007463B0 /* ProgressViewController.swift */; };
+		89B567E624F3FDE100AB630F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894B960824E431E3007463B0 /* Assets.xcassets */; };
+		89B567E724F3FDF500AB630F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B567C624F3085B00AB630F /* MainInterface.storyboard */; };
+		89B567E824F3FDFA00AB630F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B567C424F3085B00AB630F /* NotificationViewController.swift */; };
+		89E271D725102EB700FCFFC7 /* NewNotecardSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E271D625102EB700FCFFC7 /* NewNotecardSetViewController.swift */; };
+		89E271DB25104EFF00FCFFC7 /* CreateNewSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E271DA25104EFF00FCFFC7 /* CreateNewSetViewController.swift */; };
+		89E271DD251052A900FCFFC7 /* EditExistingSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E271DC251052A900FCFFC7 /* EditExistingSetViewController.swift */; };
+		89E271DE2510536100FCFFC7 /* NewNotecardSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E271D625102EB700FCFFC7 /* NewNotecardSetViewController.swift */; };
+		89E271E02510536700FCFFC7 /* QuizletInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BBF9925092F8B00DFC71E /* QuizletInstructionsViewController.swift */; };
+		89E271E12510536A00FCFFC7 /* UploadFromQuizletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89080C33250010FE00B4D049 /* UploadFromQuizletViewController.swift */; };
+		89E271E22510536C00FCFFC7 /* EditExistingSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E271DC251052A900FCFFC7 /* EditExistingSetViewController.swift */; };
+		89E271E32510537000FCFFC7 /* CreateNewSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E271DA25104EFF00FCFFC7 /* CreateNewSetViewController.swift */; };
+		89EBDE3A24F742D700A5E264 /* NotecardCellDoneOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBDE3824F742D700A5E264 /* NotecardCellDoneOrNot.swift */; };
+		89EBDE3B24F742D700A5E264 /* NotecardCellDoneOrNot.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89EBDE3924F742D700A5E264 /* NotecardCellDoneOrNot.xib */; };
+		89EBDE3C24F742E300A5E264 /* NotecardCellDoneOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBDE3824F742D700A5E264 /* NotecardCellDoneOrNot.swift */; };
+		89EBDE4024F7F43800A5E264 /* SeeQuestionsAnsweredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBDE3F24F7F43800A5E264 /* SeeQuestionsAnsweredViewController.swift */; };
+		B37D7B35C3EB704B8DD486C9 /* Pods_Lofee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12660F9CF0AAAE042DD47CD0 /* Pods_Lofee.framework */; };
+		BE8962F93D3844E0DE20D495 /* Pods_NotificationAppExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865FDAE82465D22066B6D476 /* Pods_NotificationAppExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89B567CA24F3085B00AB630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 894B95F424E431D9007463B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89B567BD24F3085A00AB630F;
+			remoteInfo = NotificationAppExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		89B567D024F3085B00AB630F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				89B567CC24F3085B00AB630F /* NotificationAppExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12660F9CF0AAAE042DD47CD0 /* Pods_Lofee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lofee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		142F19D3622C83EB6210A80D /* Pods-Lofee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lofee.debug.xcconfig"; path = "Target Support Files/Pods-Lofee/Pods-Lofee.debug.xcconfig"; sourceTree = "<group>"; };
+		26147F637F8964999F580869 /* Pods-NotificationAppExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationAppExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationAppExtension/Pods-NotificationAppExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		865FDAE82465D22066B6D476 /* Pods_NotificationAppExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationAppExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8902E89024EEF72F00C36DEA /* ViewNotecardSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNotecardSetViewController.swift; sourceTree = "<group>"; };
+		89080C33250010FE00B4D049 /* UploadFromQuizletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFromQuizletViewController.swift; sourceTree = "<group>"; };
+		89080C352500138200B4D049 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		890B6826250BB19E007E9CD3 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		89136202251439DE005B03AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		892CB1AD24E9B1CC003E1C90 /* ChooseCreationMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreationMethodViewController.swift; sourceTree = "<group>"; };
+		892CB1F824EC4846003E1C90 /* NotecardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotecardCell.swift; sourceTree = "<group>"; };
+		892CB1F924EC4846003E1C90 /* NotecardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotecardCell.xib; sourceTree = "<group>"; };
+		893BBF9925092F8B00DFC71E /* QuizletInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizletInstructionsViewController.swift; sourceTree = "<group>"; };
+		89487DBE250BB59B0023EF53 /* Lofee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lofee.entitlements; sourceTree = "<group>"; };
+		894B95FC24E431D9007463B0 /* Lofee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lofee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		894B95FF24E431D9007463B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		894B960124E431D9007463B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		894B960624E431D9007463B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		894B960824E431E3007463B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		894B960B24E431E3007463B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		894B960D24E431E3007463B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894B961324E44744007463B0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		894B961524E44934007463B0 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		894B961724E45714007463B0 /* NotecardSetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotecardSetsTableViewController.swift; sourceTree = "<group>"; };
+		894B961924E45A03007463B0 /* CircleProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarView.swift; sourceTree = "<group>"; };
+		894B961B24E4AE22007463B0 /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		894B961F24E4AF26007463B0 /* Notecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notecard.swift; sourceTree = "<group>"; };
+		8957C91A251E68C60033075B /* SubscribeToPremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeToPremiumViewController.swift; sourceTree = "<group>"; };
+		8980248224F54A5E00A5DC96 /* NotificationAppExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationAppExtension.entitlements; sourceTree = "<group>"; };
+		89A3848F2514D08400A599DD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		89A384932514DD8D00A599DD /* SlideInTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTouch.swift; sourceTree = "<group>"; };
+		89B567A924F19E2000AB630F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		89B567B424F2D42100AB630F /* NotecardSetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotecardSetCell.swift; sourceTree = "<group>"; };
+		89B567B524F2D42100AB630F /* NotecardSetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotecardSetCell.xib; sourceTree = "<group>"; };
+		89B567B824F3069100AB630F /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		89B567BE24F3085A00AB630F /* NotificationAppExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationAppExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B567BF24F3085B00AB630F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		89B567C124F3085B00AB630F /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		89B567C424F3085B00AB630F /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		89B567C724F3085B00AB630F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		89B567C924F3085B00AB630F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E271D625102EB700FCFFC7 /* NewNotecardSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotecardSetViewController.swift; sourceTree = "<group>"; };
+		89E271DA25104EFF00FCFFC7 /* CreateNewSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewSetViewController.swift; sourceTree = "<group>"; };
+		89E271DC251052A900FCFFC7 /* EditExistingSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExistingSetViewController.swift; sourceTree = "<group>"; };
+		89EBDE3824F742D700A5E264 /* NotecardCellDoneOrNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotecardCellDoneOrNot.swift; sourceTree = "<group>"; };
+		89EBDE3924F742D700A5E264 /* NotecardCellDoneOrNot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotecardCellDoneOrNot.xib; sourceTree = "<group>"; };
+		89EBDE3F24F7F43800A5E264 /* SeeQuestionsAnsweredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeQuestionsAnsweredViewController.swift; sourceTree = "<group>"; };
+		F2AFC6E6BFD0D325DDC7EB4C /* Pods-Lofee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lofee.release.xcconfig"; path = "Target Support Files/Pods-Lofee/Pods-Lofee.release.xcconfig"; sourceTree = "<group>"; };
+		FFB67AD18DA0DC10DE42BFF8 /* Pods-NotificationAppExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationAppExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationAppExtension/Pods-NotificationAppExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		894B95F924E431D9007463B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89136203251439DE005B03AF /* StoreKit.framework in Frameworks */,
+				89080C362500138200B4D049 /* WebKit.framework in Frameworks */,
+				B37D7B35C3EB704B8DD486C9 /* Pods_Lofee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B567BB24F3085A00AB630F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B567C224F3085B00AB630F /* UserNotificationsUI.framework in Frameworks */,
+				89B567C024F3085B00AB630F /* UserNotifications.framework in Frameworks */,
+				890B6827250BB19E007E9CD3 /* HomeKit.framework in Frameworks */,
+				BE8962F93D3844E0DE20D495 /* Pods_NotificationAppExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8913620625144FF7005B03AF /* SideMenuControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89A3848F2514D08400A599DD /* MenuTableViewController.swift */,
+				89A384932514DD8D00A599DD /* SlideInTouch.swift */,
+				8957C91A251E68C60033075B /* SubscribeToPremiumViewController.swift */,
+			);
+			path = SideMenuControllers;
+			sourceTree = "<group>";
+		};
+		892CB1AF24EACA3E003E1C90 /* NotecardControllers */ = {
+			isa = PBXGroup;
+			children = (
+				894B961724E45714007463B0 /* NotecardSetsTableViewController.swift */,
+				892CB1AD24E9B1CC003E1C90 /* ChooseCreationMethodViewController.swift */,
+				89E271DA25104EFF00FCFFC7 /* CreateNewSetViewController.swift */,
+				8902E89024EEF72F00C36DEA /* ViewNotecardSetViewController.swift */,
+				89E271DC251052A900FCFFC7 /* EditExistingSetViewController.swift */,
+				89080C33250010FE00B4D049 /* UploadFromQuizletViewController.swift */,
+				893BBF9925092F8B00DFC71E /* QuizletInstructionsViewController.swift */,
+				89E271D625102EB700FCFFC7 /* NewNotecardSetViewController.swift */,
+			);
+			path = NotecardControllers;
+			sourceTree = "<group>";
+		};
+		892CB1E724EC0F50003E1C90 /* ProgressControllers */ = {
+			isa = PBXGroup;
+			children = (
+				894B961524E44934007463B0 /* ProgressViewController.swift */,
+				89EBDE3F24F7F43800A5E264 /* SeeQuestionsAnsweredViewController.swift */,
+			);
+			path = ProgressControllers;
+			sourceTree = "<group>";
+		};
+		894B95F324E431D9007463B0 = {
+			isa = PBXGroup;
+			children = (
+				894B95FE24E431D9007463B0 /* Lofee */,
+				89B567C324F3085B00AB630F /* NotificationAppExtension */,
+				894B95FD24E431D9007463B0 /* Products */,
+				B5303B629D609D7CD0F0E048 /* Pods */,
+				89D0F2E1A026BBEFA3A6B509 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		894B95FD24E431D9007463B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				894B95FC24E431D9007463B0 /* Lofee.app */,
+				89B567BE24F3085A00AB630F /* NotificationAppExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		894B95FE24E431D9007463B0 /* Lofee */ = {
+			isa = PBXGroup;
+			children = (
+				89487DBE250BB59B0023EF53 /* Lofee.entitlements */,
+				894B95FF24E431D9007463B0 /* AppDelegate.swift */,
+				894B960124E431D9007463B0 /* SceneDelegate.swift */,
+				894B961D24E4AE2A007463B0 /* Model */,
+				894B961E24E4AE39007463B0 /* View */,
+				892CB1AF24EACA3E003E1C90 /* NotecardControllers */,
+				89B567A824F16D8800AB630F /* SettingsControllers */,
+				892CB1E724EC0F50003E1C90 /* ProgressControllers */,
+				8913620625144FF7005B03AF /* SideMenuControllers */,
+				894B960824E431E3007463B0 /* Assets.xcassets */,
+				894B960A24E431E3007463B0 /* LaunchScreen.storyboard */,
+				894B960D24E431E3007463B0 /* Info.plist */,
+			);
+			path = Lofee;
+			sourceTree = "<group>";
+		};
+		894B961D24E4AE2A007463B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				894B961B24E4AE22007463B0 /* Set.swift */,
+				894B961F24E4AF26007463B0 /* Notecard.swift */,
+				89B567B424F2D42100AB630F /* NotecardSetCell.swift */,
+				892CB1F824EC4846003E1C90 /* NotecardCell.swift */,
+				89EBDE3824F742D700A5E264 /* NotecardCellDoneOrNot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		894B961E24E4AE39007463B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				894B960524E431D9007463B0 /* Main.storyboard */,
+				89B567B524F2D42100AB630F /* NotecardSetCell.xib */,
+				892CB1F924EC4846003E1C90 /* NotecardCell.xib */,
+				89EBDE3924F742D700A5E264 /* NotecardCellDoneOrNot.xib */,
+				894B961324E44744007463B0 /* TabBar.swift */,
+				894B961924E45A03007463B0 /* CircleProgressBarView.swift */,
+				89B567B824F3069100AB630F /* Slider.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89B567A824F16D8800AB630F /* SettingsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89B567A924F19E2000AB630F /* SettingsViewController.swift */,
+			);
+			path = SettingsControllers;
+			sourceTree = "<group>";
+		};
+		89B567C324F3085B00AB630F /* NotificationAppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8980248224F54A5E00A5DC96 /* NotificationAppExtension.entitlements */,
+				89B567C424F3085B00AB630F /* NotificationViewController.swift */,
+				89B567C624F3085B00AB630F /* MainInterface.storyboard */,
+				89B567C924F3085B00AB630F /* Info.plist */,
+			);
+			path = NotificationAppExtension;
+			sourceTree = "<group>";
+		};
+		89D0F2E1A026BBEFA3A6B509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89136202251439DE005B03AF /* StoreKit.framework */,
+				890B6826250BB19E007E9CD3 /* HomeKit.framework */,
+				89080C352500138200B4D049 /* WebKit.framework */,
+				89B567BF24F3085B00AB630F /* UserNotifications.framework */,
+				89B567C124F3085B00AB630F /* UserNotificationsUI.framework */,
+				12660F9CF0AAAE042DD47CD0 /* Pods_Lofee.framework */,
+				865FDAE82465D22066B6D476 /* Pods_NotificationAppExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5303B629D609D7CD0F0E048 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				142F19D3622C83EB6210A80D /* Pods-Lofee.debug.xcconfig */,
+				F2AFC6E6BFD0D325DDC7EB4C /* Pods-Lofee.release.xcconfig */,
+				26147F637F8964999F580869 /* Pods-NotificationAppExtension.debug.xcconfig */,
+				FFB67AD18DA0DC10DE42BFF8 /* Pods-NotificationAppExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		894B95FB24E431D9007463B0 /* Lofee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894B961024E431E3007463B0 /* Build configuration list for PBXNativeTarget "Lofee" */;
+			buildPhases = (
+				0F50CCE88E5872E7EB273E98 /* [CP] Check Pods Manifest.lock */,
+				894B95F824E431D9007463B0 /* Sources */,
+				894B95F924E431D9007463B0 /* Frameworks */,
+				894B95FA24E431D9007463B0 /* Resources */,
+				89B567D024F3085B00AB630F /* Embed App Extensions */,
+				4E396752BE871BE0F383FEC4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89B567CB24F3085B00AB630F /* PBXTargetDependency */,
+			);
+			name = Lofee;
+			productName = Design;
+			productReference = 894B95FC24E431D9007463B0 /* Lofee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89B567BD24F3085A00AB630F /* NotificationAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B567CD24F3085B00AB630F /* Build configuration list for PBXNativeTarget "NotificationAppExtension" */;
+			buildPhases = (
+				48543CC84292549774DCBFD8 /* [CP] Check Pods Manifest.lock */,
+				89B567BA24F3085A00AB630F /* Sources */,
+				89B567BB24F3085A00AB630F /* Frameworks */,
+				89B567BC24F3085A00AB630F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationAppExtension;
+			productName = NotificationAppExtension;
+			productReference = 89B567BE24F3085A00AB630F /* NotificationAppExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		894B95F424E431D9007463B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Asritha Bodepudi";
+				TargetAttributes = {
+					894B95FB24E431D9007463B0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					89B567BD24F3085A00AB630F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 894B95F724E431D9007463B0 /* Build configuration list for PBXProject "Lofee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 894B95F324E431D9007463B0;
+			productRefGroup = 894B95FD24E431D9007463B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				894B95FB24E431D9007463B0 /* Lofee */,
+				89B567BD24F3085A00AB630F /* NotificationAppExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		894B95FA24E431D9007463B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B567B724F2D42100AB630F /* NotecardSetCell.xib in Resources */,
+				89B567E724F3FDF500AB630F /* MainInterface.storyboard in Resources */,
+				894B960C24E431E3007463B0 /* LaunchScreen.storyboard in Resources */,
+				892CB1FB24EC4846003E1C90 /* NotecardCell.xib in Resources */,
+				894B960924E431E3007463B0 /* Assets.xcassets in Resources */,
+				89EBDE3B24F742D700A5E264 /* NotecardCellDoneOrNot.xib in Resources */,
+				894B960724E431D9007463B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B567BC24F3085A00AB630F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B567DA24F3FDB500AB630F /* NotecardSetCell.xib in Resources */,
+				89B567C824F3085B00AB630F /* MainInterface.storyboard in Resources */,
+				89B567D924F3FDB100AB630F /* NotecardCell.xib in Resources */,
+				89B567D824F3FDAC00AB630F /* Main.storyboard in Resources */,
+				89B567E624F3FDE100AB630F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F50CCE88E5872E7EB273E98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lofee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48543CC84292549774DCBFD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationAppExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E396752BE871BE0F383FEC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lofee/Pods-Lofee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lofee/Pods-Lofee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lofee/Pods-Lofee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		894B95F824E431D9007463B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A384942514DD8D00A599DD /* SlideInTouch.swift in Sources */,
+				8902E89124EEF72F00C36DEA /* ViewNotecardSetViewController.swift in Sources */,
+				894B961424E44744007463B0 /* TabBar.swift in Sources */,
+				892CB1AE24E9B1CC003E1C90 /* ChooseCreationMethodViewController.swift in Sources */,
+				892CB1FA24EC4846003E1C90 /* NotecardCell.swift in Sources */,
+				89E271D725102EB700FCFFC7 /* NewNotecardSetViewController.swift in Sources */,
+				89A384902514D08400A599DD /* MenuTableViewController.swift in Sources */,
+				894B962024E4AF26007463B0 /* Notecard.swift in Sources */,
+				894B961824E45714007463B0 /* NotecardSetsTableViewController.swift in Sources */,
+				893BBF9A25092F8B00DFC71E /* QuizletInstructionsViewController.swift in Sources */,
+				894B960024E431D9007463B0 /* AppDelegate.swift in Sources */,
+				89E271DB25104EFF00FCFFC7 /* CreateNewSetViewController.swift in Sources */,
+				894B961C24E4AE22007463B0 /* Set.swift in Sources */,
+				89B567AA24F19E2000AB630F /* SettingsViewController.swift in Sources */,
+				89EBDE4024F7F43800A5E264 /* SeeQuestionsAnsweredViewController.swift in Sources */,
+				89E271DD251052A900FCFFC7 /* EditExistingSetViewController.swift in Sources */,
+				89EBDE3A24F742D700A5E264 /* NotecardCellDoneOrNot.swift in Sources */,
+				8957C91B251E68C60033075B /* SubscribeToPremiumViewController.swift in Sources */,
+				89B567B924F3069100AB630F /* Slider.swift in Sources */,
+				894B960224E431D9007463B0 /* SceneDelegate.swift in Sources */,
+				89B567E824F3FDFA00AB630F /* NotificationViewController.swift in Sources */,
+				894B961624E44934007463B0 /* ProgressViewController.swift in Sources */,
+				894B961A24E45A03007463B0 /* CircleProgressBarView.swift in Sources */,
+				89080C34250010FE00B4D049 /* UploadFromQuizletViewController.swift in Sources */,
+				89B567B624F2D42100AB630F /* NotecardSetCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B567BA24F3085A00AB630F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B567E224F3FDCD00AB630F /* ViewNotecardSetViewController.swift in Sources */,
+				89B567D524F3FD8F00AB630F /* Notecard.swift in Sources */,
+				89B567E024F3FDC800AB630F /* ChooseCreationMethodViewController.swift in Sources */,
+				89E271E22510536C00FCFFC7 /* EditExistingSetViewController.swift in Sources */,
+				89E271DE2510536100FCFFC7 /* NewNotecardSetViewController.swift in Sources */,
+				89A384972514DEA200A599DD /* MenuTableViewController.swift in Sources */,
+				89B567D324F3FD8700AB630F /* Set.swift in Sources */,
+				89A384962514DE9D00A599DD /* SlideInTouch.swift in Sources */,
+				89B567D624F3FD9200AB630F /* NotecardSetCell.swift in Sources */,
+				89B567DB24F3FDB900AB630F /* TabBar.swift in Sources */,
+				89B567E524F3FDD800AB630F /* ProgressViewController.swift in Sources */,
+				89A384982514DEA500A599DD /* SeeQuestionsAnsweredViewController.swift in Sources */,
+				89B567E424F3FDD300AB630F /* SettingsViewController.swift in Sources */,
+				89B567DE24F3FDC100AB630F /* Slider.swift in Sources */,
+				89EBDE3C24F742E300A5E264 /* NotecardCellDoneOrNot.swift in Sources */,
+				89B567D124F3FD7800AB630F /* AppDelegate.swift in Sources */,
+				89E271E32510537000FCFFC7 /* CreateNewSetViewController.swift in Sources */,
+				89B567C524F3085B00AB630F /* NotificationViewController.swift in Sources */,
+				89B567D724F3FD9500AB630F /* NotecardCell.swift in Sources */,
+				89E271E02510536700FCFFC7 /* QuizletInstructionsViewController.swift in Sources */,
+				89B567D224F3FD7B00AB630F /* SceneDelegate.swift in Sources */,
+				89B567DC24F3FDBD00AB630F /* CircleProgressBarView.swift in Sources */,
+				89E271E12510536A00FCFFC7 /* UploadFromQuizletViewController.swift in Sources */,
+				89B567DF24F3FDC400AB630F /* NotecardSetsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89B567CB24F3085B00AB630F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89B567BD24F3085A00AB630F /* NotificationAppExtension */;
+			targetProxy = 89B567CA24F3085B00AB630F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		894B960524E431D9007463B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				894B960624E431D9007463B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		894B960A24E431E3007463B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				894B960B24E431E3007463B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		89B567C624F3085B00AB630F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89B567C724F3085B00AB630F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		894B960E24E431E3007463B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		894B960F24E431E3007463B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		894B961124E431E3007463B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142F19D3622C83EB6210A80D /* Pods-Lofee.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lofee/Lofee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTC9D823P9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Lofee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tonnelier.Lofee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		894B961224E431E3007463B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AFC6E6BFD0D325DDC7EB4C /* Pods-Lofee.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lofee/Lofee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTC9D823P9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Lofee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tonnelier.Lofee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89B567CE24F3085B00AB630F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26147F637F8964999F580869 /* Pods-NotificationAppExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationAppExtension/NotificationAppExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTC9D823P9;
+				INFOPLIST_FILE = NotificationAppExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tonnelier.Lofee.NotificationAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89B567CF24F3085B00AB630F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB67AD18DA0DC10DE42BFF8 /* Pods-NotificationAppExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationAppExtension/NotificationAppExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTC9D823P9;
+				INFOPLIST_FILE = NotificationAppExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tonnelier.Lofee.NotificationAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		894B95F724E431D9007463B0 /* Build configuration list for PBXProject "Lofee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894B960E24E431E3007463B0 /* Debug */,
+				894B960F24E431E3007463B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		894B961024E431E3007463B0 /* Build configuration list for PBXNativeTarget "Lofee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894B961124E431E3007463B0 /* Debug */,
+				894B961224E431E3007463B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B567CD24F3085B00AB630F /* Build configuration list for PBXNativeTarget "NotificationAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89B567CE24F3085B00AB630F /* Debug */,
+				89B567CF24F3085B00AB630F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 894B95F424E431D9007463B0 /* Project object */;
+}
