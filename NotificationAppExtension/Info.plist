@@ -4,8 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-    <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-1093493132842059~4613068867</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-1093493132842059~4613068867</string>
 	<key>CFBundleDisplayName</key>
 	<string>NotificationAppExtension</string>
 	<key>CFBundleExecutable</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>

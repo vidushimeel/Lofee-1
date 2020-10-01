@@ -88,7 +88,7 @@ class SettingsViewController: UIViewController, UNUserNotificationCenterDelegate
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
-       
+        print(self.chooseSetToStudyLabel.text)
         allSets = realm.objects(Set.self)
         notecardSetImages = [#imageLiteral(resourceName: "ButtonRedNotecardSet"), #imageLiteral(resourceName: "ButtonBlueNotecardSet"), #imageLiteral(resourceName: "ButtonYellowNotecardSet"), #imageLiteral(resourceName: "ButtonLightBlueNotecardSet")]
         chooseSetToStudyButton.layer.cornerRadius = 18
@@ -116,7 +116,7 @@ class SettingsViewController: UIViewController, UNUserNotificationCenterDelegate
         
         
         bannerView.rootViewController = self
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-1093493132842059/6694089687"
         bannerView.load(GADRequest())
         if let setBeingStudied = defaults?.object(forKey: "setPickedToBeStudied"){
             if allSets != nil{
@@ -162,7 +162,9 @@ extension SettingsViewController: UIViewControllerTransitioningDelegate{
 extension SettingsViewController{
     
     @IBAction func startNotificationsToggleChanged(_ sender: UISwitch) {
+        print (self.chooseSetToStudyLabel.text!)
         if self.chooseSetToStudyButton.titleLabel?.text != ""{ //if toggled again to study same set, refill array values so can loop through entire set again instead of just showing "YOU ARE DONE" message
+            print ("toggled nicely")
             if allSets != nil{
                 for set in allSets!{
                     if (set.name) == (self.defaults?.object(forKey: "setPickedToBeStudied") as! String){
@@ -174,20 +176,21 @@ extension SettingsViewController{
             updateSetArrays()
         }
         
-        if self.chooseSetToStudyLabel.text == ""{ //if no set has been selected, but user tried to toggle notifications
+        if (self.chooseSetToStudyLabel.text!) == "" ||  (self.chooseSetToStudyLabel.text!) == "Choose Set To Study "{ //if no set has been selected, but user tried to toggle notifications
             let alert = UIAlertController(title: "Please pick a notecard set to study", message: "Notifications cannot be sent without picking a set", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true)
             self.startNotificationsToggle.isOn = false
         }
-            
+         
         else{
+            print ("hiyaaa bitch")
             registerCategories()
             self.defaults?.set(sender.isOn , forKey: "startNotificationsToggleIsOn")
             if self.startNotificationsToggle.isOn {
                 let center = UNUserNotificationCenter.current()
                 let content = UNMutableNotificationContent()
-                content.title = "Notification"
+                content.title = "Pull Down To View Notecard"
                 content.categoryIdentifier = "NotecardNotification"
                 content.sound = .default
                 let time = self.defaults?.object(forKey: "minutesBetweenNotifications") as! Double * 60
@@ -327,8 +330,6 @@ extension SettingsViewController{
         }, completion: nil)
     }
 }
-
-
 
 
 

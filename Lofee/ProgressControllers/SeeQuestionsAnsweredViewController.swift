@@ -29,7 +29,7 @@ class SeeQuestionsAnsweredViewController: UIViewController {
         self.tableView.backgroundColor = UIColor(red: 0.97, green: 0.97, blue: 1.00, alpha: 1.00)
         
         bannerView.rootViewController = self
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-1093493132842059/6694089687"
         bannerView.load(GADRequest())
     }
     override func viewWillAppear(_ animated: Bool) {

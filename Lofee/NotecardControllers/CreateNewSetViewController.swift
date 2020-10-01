@@ -43,7 +43,7 @@ class CreateNewSetViewController: NewNotecardSetViewController {
         
         //Banner Ad
         bannerView.rootViewController = self
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-1093493132842059/6694089687"
         bannerView.load(GADRequest())
     }
     
